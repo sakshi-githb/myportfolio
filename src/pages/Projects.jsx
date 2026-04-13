@@ -3,62 +3,41 @@ import { Code, ExternalLink } from "lucide-react";
 import "./Projects.css";
 import { useDevice } from "../hooks/useDevice";
 import portfolioss from "../assets/portfolioss.png";
+import hemolink from "../assets/hemolink.png";
+import indlib from "../assets/indlib.png";
 
 const PROJECTS = [
   {
     id: 1,
+    name: "Blood Donation Management",
+    short:
+      "HemoLink is a comprehensive platform connecting blood donors efficiently with hospitals and organizations.",
+    tags: ["React", "Node", "MongoDB", "Express"],
+    github: "https://github.com/sakshi-githb/hemolink",
+    live: "https://github.com/sakshi-githb/hemolink",
+    image: hemolink,
+  },
+  {
+    id: 2,
     name: "Portfolio Website",
     short:
       "A cinematic personal portfolio built with React, GSAP animations, and Spline 3D.",
     tags: ["React", "GSAP", "Spline", "CSS"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/sakshi-githb/myportfolio",
+    live: "https://sakshi25portfolio.netlify.app/",
     image: portfolioss,
   },
   {
-    id: 2,
-    name: "AI Chatbot",
-    short:
-      "A conversational AI chatbot with local RAG support, built with Python and a React frontend.",
-    tags: ["Python", "React", "RAG", "Node"],
-    github: "#",
-    live: "#",
-    image:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1974&auto=format&fit=crop",
-  },
-  {
     id: 3,
-    name: "Data Dashboard",
+    name: "Indradhanush Library",
     short:
-      "An interactive data visualization dashboard with real-time charts and filtering capabilities.",
-    tags: ["React", "D3.js", "MongoDB", "Express"],
-    github: "#",
-    live: "#",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+      "Collaborated with an NGO to develop a centralized web portal for managing and browsing library resources. En-abled users to search books efficiently based on categories such as age group and topics.",
+    tags: ["HTML", "CSS", "Javascript"],
+    github: "https://github.com/sakshi-githb/indradhanush-library",
+    live: "https://sakshi-githb.github.io/library/library.html",
+    image: indlib,
   },
-  /* {
-    id: 4,
-    name: "E-Commerce UI",
-    short:
-      "A modern e-commerce frontend with product filtering, cart, and smooth page transitions.",
-    tags: ["React", "Tailwind", "JavaScript", "CSS"],
-    github: "#",
-    live: "#",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
-  },
-  {
-    id: 5,
-    name: "Weather App",
-    short:
-      "A clean weather application pulling live data from an API with animated condition icons.",
-    tags: ["JavaScript", "API", "CSS", "HTML"],
-    github: "#",
-    live: "#",
-    image:
-      "https://images.unsplash.com/photo-1504608524841-42584120d693?q=80&w=2065&auto=format&fit=crop",
-  },*/
+
 ];
 
 const ProjectCard = ({ project, isActive, onMouseEnter, onTap, isTouch }) => {
