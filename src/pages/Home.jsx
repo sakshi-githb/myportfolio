@@ -1,4 +1,4 @@
-import resumeFile from "../assets/resume.pdf";
+import resumeFile from "../assets/Sakshi_Dalvi_Resume.pdf";
 
 const Home = () => {
   return (
