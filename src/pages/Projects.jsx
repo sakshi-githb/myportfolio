@@ -14,7 +14,7 @@ const PROJECTS = [
       "HemoLink is a comprehensive platform connecting blood donors efficiently with hospitals and organizations.",
     tags: ["React", "Node", "MongoDB", "Express"],
     github: "https://github.com/sakshi-githb/hemolink",
-    live: "https://github.com/sakshi-githb/hemolink",
+    live: "https://hemolinkapp.netlify.app/",
     image: hemolink,
   },
   {
