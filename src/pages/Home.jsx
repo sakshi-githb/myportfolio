@@ -26,7 +26,8 @@ const Home = () => {
           </p>
           <a
             href="/resume.pdf"
-            download="Sakshi_Dalvi_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary"
           >
             Resume
