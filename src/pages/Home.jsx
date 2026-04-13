@@ -1,5 +1,3 @@
-import resumeFile from "../assets/Sakshi_Dalvi_Resume.pdf";
-
 const Home = () => {
   return (
     <main className="hero">
@@ -27,7 +25,7 @@ const Home = () => {
             <br /> something new Every Day.
           </p>
           <a
-            href={resumeFile}
+            href="https://drive.google.com/file/d/1TbJ4QeKwCccbrtovcxcgaGB5dSbtjkNI/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
