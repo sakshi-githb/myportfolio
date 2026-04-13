@@ -1,3 +1,5 @@
+import resumeFile from "../assets/resume.pdf";
+
 const Home = () => {
   return (
     <main className="hero">
@@ -25,7 +27,7 @@ const Home = () => {
             <br /> something new Every Day.
           </p>
           <a
-            href="/resume.pdf"
+            href={resumeFile}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
