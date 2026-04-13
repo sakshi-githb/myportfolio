@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { Observer } from "gsap/observer";
+import { Observer } from "gsap/Observer";
 import "./SkillsMarquee.css";
 
 gsap.registerPlugin(Observer);
