@@ -1,0 +1,145 @@
+.about-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 60px;
+  width: 100%;
+  height: calc(100vh - 120px);
+  overflow: hidden;
+  pointer-events: auto;
+  background-image: 
+    linear-gradient(rgba(var(--text-color-rgb), 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--text-color-rgb), 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.about-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 40px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-right: 20px;
+  min-height: 0;
+  align-self: center;
+  pointer-events: auto;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+  overflow: hidden;
+  padding-top: 0;
+  margin-top: -30px;
+}
+
+.globe-container {
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.about-text-section {
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding: 0 40px;
+  margin-top: -15px;
+}
+
+.about-highlight-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.8;
+  font-weight: 400;
+  max-width: 90%;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .about-page {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+    padding: 16px 24px;
+    padding-top: 60px;
+  }
+  .about-container {
+    flex-direction: column;
+    height: auto;
+    gap: 24px;
+  }
+  .about-left {
+    padding-right: 0;
+    height: auto;
+    width: 100%;
+    order: 2;
+  }
+  .about-right {
+    height: auto;
+    margin-top: 0;
+    order: 1;
+    width: 100%;
+  }
+  .about-text-section {
+    padding: 0 10px;
+  }
+  .about-highlight-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-container {
+    gap: 20px;
+  }
+  .globe-container {
+    margin-top: 0;
+  }
+  .about-right {
+    gap: 8px;
+  }
+  .about-text-section {
+    padding: 0;
+    margin-top: 0;
+  }
+  .about-highlight-text {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding-top: 75px;
+  }
+  .about-highlight-text {
+    font-size: 0.85rem;
+  }
+}
